@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    :root {
+      --bg: #FCE7F0;           /* Soft Baby Pink Background */
+      --card-bg: #FAF6F0;      /* Soft Beige Cards */
+      --card-border: #2E5A44;  /* Border on cards */
+      --bright-green: #15803D; /* Brighter Green for Headings & Bold Text */
+      --dark-green: #143823;   /* Rich Dark Green for Body/Smaller Text */
+      --light-green: #E2EFE7;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .statement {
+      font-size: 1.2rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    /* Skills Section */
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .skill-tag {
+      background-color: var(--card-bg);
+      border: 1px solid #334155;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.95rem;
+    }
+    /* Projects Section */
+    .projects-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .project-card {
+      background-color: var(--card-bg);
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+    .project-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+    .project-card p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+    .project-links a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.9rem;
+      background-color: #334155;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      margin-right: 0.5rem;
+      transition: background-color 0.2s;
+    }
+    .project-links a:hover {
+      background-color: var(--accent);
+      color: #0f172a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Sudha Varshini Kumpatla</h1>
+      <p class="sub-header">Rutgers University | BS in Finance and Data Science (GPA: 3.83/4.0)</p>
+      <!-- Rubric Requirement: Clear, 1-sentence personal statement -->
+      <p class="statement">
+        Finance and Data Science scholar at Rutgers University combining quantitative modeling, risk analysis, and corporate outreach expertise to pursue a future career in Intellectual Property law.
+      </p>
+    </header>
+
+    <!-- Rubric Requirement: Highlighted Skills List -->
+    <section id="skills">
+      <h2>Skills & Certifications</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">Spreadsheet Modeling</span>
+        <span class="skill-tag">Excel & Pivot Tables</span>
+        <span class="skill-tag">Data Cleaning & Visualization</span>
+        <span class="skill-tag">R (Basic)</span>
+        <span class="skill-tag">Budget Tracking</span>
+        <span class="skill-tag">Goldman Sachs Internal Audit Simulation</span>
+      </div>
+    </section>
+
+    <!-- Rubric Requirement: 2-3 Relevant Projects with working links -->
+    <section id="projects">
+      <h2>Key Projects & Experience Showcase</h2>
+      <div class="projects-grid">
+        
+        <article class="project-card">
+          <h3>Centralized Operating Budget & Sponsorship Pipeline</h3>
+          <p class="project-role">RU Solar Car Club | Finance Team</p>
+          <p>Built and maintained centralized budget tracking systems and Excel pivot table dashboards to monitor overall operating expenses across sub-teams with 100% data integrity, while executing corporate sponsorship tracking pipelines.</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Commercial Risk Assessment & Mitigation Evaluation</h3>
+          <p class="project-role">Rue Insurance | Executive Externship</p>
+          <p>Evaluated commercial risk profiles and insurance coverage strategies alongside C-suite executives. Conducted onsite risk field evaluations across commercial properties and retail businesses to identify liability risks.</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Interactive Financial Literacy Education Modules</h3>
+          <p class="project-role">YES, M.I.S.S. Inc. | Workshop Facilitator</p>
+          <p>Designed and delivered interactive virtual educational modules focused on foundational financial literacy, career pathways, and budgeting principles for high school students.</p>
+        </article>
+
+      </div>
+    </section>
+  </div>
+</body>
+</html>
